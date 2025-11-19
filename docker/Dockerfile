@@ -29,10 +29,10 @@ FROM python:3.12-slim
 
 ENV PYTHONUNBUFFERED=1 \
     JOINLY_SERVER_HOST="0.0.0.0" \
-    JOINLY_SERVER_PORT=8000 \
+    JOINLY_SERVER_PORT=10000 \
     JOINLY_LOGGING_PLAIN=1
 
-EXPOSE 8000
+EXPOSE 10000
 
 # Install system dependencies (for audio, video, browser, etc.)
 RUN apt-get update && apt-get install -y --no-install-recommends \
